@@ -11,6 +11,8 @@ public class MyFirstProgram {
         double s = l * l;
         System.out.println("Plow'ad' kvadrata so storonoj " + l + " = " + s);
 
+        System.out.println("Hello~");
+
 
       //  System.out.println(2 + 2);
       //  System.out.println(2 * 2);
