@@ -7,27 +7,28 @@ public class MyFirstProgram {
         hello("user");
         hello("Gulnara");
 
-        double l = 5;
-        System.out.println("Plowad' kvadrata so storonoj " + l + " = " + area(l));
+        Square s = new Square(5);
+        System.out.println("Plowad' kvadrata so storonoj " + s.l + " = " + s.area());
 
-        double a = 4;
-        double b = 6;
-        System.out.println("Plowad' pramoygolnika so storonami " + a + " i " + b + " = " + area(a, b));
+        Rectangle r = new Rectangle(4, 6);
+        System.out.println("Plowad' pramoygolnika so storonami " + r.a + " i " + r.b + " = " + r.area());
     }
 
     public static void hello(String somebody) {
         System.out.println("Hello, " + somebody + "!");
     }
 
-    public static double area(double len) {
-        return len * len;
-    }
-
-    public static double area (double a, double b) {
-        return a * b;
-    }
-
 }
+
+    //public static double area(Square s) {
+        //return s.l * s.l;
+    //}
+
+    //public static double area (Rectangle r) {
+        //return r.a * r.b;
+    //}
+
+
 
         //String somebody = "world";
         //System.out.println("Hello, " + somebody + "!");
