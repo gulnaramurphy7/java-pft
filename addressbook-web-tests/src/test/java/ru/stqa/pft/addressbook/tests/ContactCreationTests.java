@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
-import ru.stqa.pft.addressbook.model.AddNewFormData;
+import ru.stqa.pft.addressbook.model.ContactData;
 
 public class ContactCreationTests
 {
@@ -37,7 +37,7 @@ public class ContactCreationTests
     public void testNewUserCreation() {
 
         gotoAddNewPage();
-        fillAddNewForm(new AddNewFormData("test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9"));
+        fillAddNewForm(new ContactData("test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9"));
         clickAddNewFormEnterButton();
         returnToHomePage();
     }
@@ -50,7 +50,7 @@ public class ContactCreationTests
         wd.findElement(By.xpath("//div[@id='content']/form/input[21]")).click();
     }
 
-    private void fillAddNewForm(AddNewFormData addNewFormData) {
+    private void fillAddNewForm(ContactData addNewFormData) {
         wd.findElement(By.name("firstname")).click();
         wd.findElement(By.name("firstname")).clear();
         wd.findElement(By.name("firstname")).sendKeys(addNewFormData.getFirstName());
