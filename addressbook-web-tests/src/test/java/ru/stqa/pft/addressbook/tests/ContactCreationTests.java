@@ -10,7 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
 import ru.stqa.pft.addressbook.model.AddNewFormData;
 
-public class NewUserCreationTests
+public class ContactCreationTests
 {
     FirefoxDriver wd;
     
