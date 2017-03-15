@@ -37,7 +37,7 @@ public class ContactCreationTests
     public void testNewUserCreation() {
 
         gotoAddNewPage();
-        fillAddNewForm(new ContactData("test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9"));
+        fillAddNewForm(new ContactData("test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", null));
         clickAddNewFormEnterButton();
         returnToHomePage();
     }
